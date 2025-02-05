@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=location_on" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=water_drop" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=air" />
+    <script src="script.js " defer ></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="input">
+            <input id="city" type="text" placeholder="Search city">
+            <button id="search">
+                <img src="search.png" width=38px height=38px color="white" alt="">
+            </button>
+        </div>
+        <div class="weather" style="display:none">
+
+            <div class="date">
+                <div class="location">
+                    <img src="location.png" width=38px height=38px  alt="">
+                        <h4 id="country">Jakarta</h4>
+                </div>
+                <div >
+                    <h4 class="curr-date">Sat, 01 Feb</h4>
+                </div>
+            </div>
+
+
+            <div class="weathersumm">
+                <div class="img-weather">
+                    <img src="weather-app.png" id="cloud" height="150px" width="150px" alt="">
+                </div>
+                <div class="weatherdata">
+                        <h1 class="temp">29°C</h1>
+                        <h3 class="condition">Clouds</h3>
+                </div>   
+            </div>
+
+            <div class="weathercondition">
+                <div class="condition">
+                    <img src="water.png" width=38px height=38px  alt="">
+                    <div class="condition-info">
+                        <h5 class="regular-txt">Humidity</h5>
+                        <div class="humidvalue">55%</div>
+                    </div>
+                </div>
+                <div class="condition">
+                    <img src="air.png" width=38px height=38px  alt="">
+                    <div class="condition-info">
+                        <h5 class="regular-txt">Wind-Speed</h5>
+                        <div class="windvalue">4.12M/s</div>
+                    </div>
+                </div>
+            </div>
+
+            
+                <div class="foreitem">
+                    <div class="block">
+                        <h5 class="dateday">05 Aug</h5>
+                    <img src="forecast.png" alt="" height="45px" width="45px" class="foreimg">
+                    <h3 class="foretemp">29°C</h3>
+                    </div>
+
+                    <div class="block">
+                        <h5 class="dateday">05 Aug</h5>
+                        <img src="forecast.png" alt="" height="45px" width="45px" class="foreimg">
+                        <h3 class="foretemp">29°C</h3>
+                    </div>
+
+                    <div class="block">
+                        <h5 class="dateday">05 Aug</h5>
+                        <img src="forecast.png" alt="" height="45px" width="45px" class="foreimg">
+                    <h3 class="foretemp">29°C</h3>
+                     </div>
+
+                    <div class="block">
+                        <h5 class="dateday">05 Aug</h5>
+                    <img src="forecast.png" alt="" height="45px" width="45px" class="foreimg">
+                    <h3 class="foretemp">29°C</h3>
+                    </div>
+                    
+                </div>
+            
+            
+        </div>
+        <div class="searchcity">
+
+            <img src="404.png"  height="170px" alt="" id="searchcity">
+            <h1>Search City</h1>
+            <h4 id="find">Find out weather conditions of the city</h4>
+        </div>
+    </div>
+
+</body>
+</html>

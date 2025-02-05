@@ -1,0 +1,133 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+body{
+    background-image: url('https://tse3.mm.bing.net/th?id=OIP.stu1-uNOL6h2JStbQmCQ_wHaEo&pid=Api&P=0&h=180');
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    color:white;
+}
+.main-container{
+    height:500px;
+    width:300px;
+    z-index:1;
+    border:linear-gradient(to top,rgb(0,0,0,0.15),rgb(255,255,255,0.15));
+    border-radius: 12px;
+    backdrop-filter: blur(100px);
+    margin-top: 75px;
+    margin-bottom: 50px;
+    padding:20px;
+}
+.input{
+    position:relative;
+    margin-bottom:20px;
+}
+#city{
+    border-radius: 99px;
+    width:90%;
+    padding: 10px 16px;
+    border:3px solid transparent;
+    background:rgb(0,0,0,0.15) ;
+    font-weight: 500;
+    font-size:18px;
+    outline:none;
+    transition:0.15s  border;
+    
+}
+#city:focus{
+    border:3px solid rgb(0,0,0,0.15)
+}
+#city::placeholder{
+    color:white;
+}
+#search{
+    position:absolute;
+    right:8px;
+    top:8px;
+    background: none;
+    border:none;
+    display:flex;
+    color:white;
+
+    cursor:pointer;
+}
+.weather{
+    display:flex;
+    flex-direction: column;
+    gap:25px;
+
+}
+.date{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.location{
+    display:flex;
+    align-items:center;
+    gap:6px;
+}
+.weathersumm{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.weatherdata{
+    text-align: end;
+}
+.weathercondition{
+    display: flex;
+    justify-content: space-between;
+}
+.condition{
+    display:flex;
+    align-items: center;
+    gap:6px
+}
+.condition span{
+    font-size:30px;
+}
+.foreitem{
+    display: flex;
+    width:300px;
+    gap:15px;
+    justify-content: space-between;
+    overflow: scroll;
+    padding-bottom: 12px;
+    
+}
+.foreitem::-webkit-scrollbar{
+    height: 8px;
+}
+
+.foreitem::-webkit-scrollbar-thumb{
+    background: rgb(0,0,0,0.15);
+    border-radius: 99px;
+}
+.block:hover{
+    background: rgb(0,0,0,0.15);
+}
+.block{
+    background: rgb(255,255,255,0.1);
+    display: flex;
+    flex-direction: column;
+    gap:6px;
+    padding: 10px;
+    min-width: 70px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.searchcity{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:15px;
+    margin-top: 25%;
+}
